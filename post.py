@@ -2,7 +2,7 @@
 from userbot import CMD_HELP
 from userbot.events import register
 from userbot.cmdhelp import CmdHelp
-
+##
 kanallar = [-1001469818787]
 
 @register(pattern="^.post")
