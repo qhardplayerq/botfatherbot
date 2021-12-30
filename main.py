@@ -26,10 +26,14 @@ def register(pattern):
     return bot.on(events.NewMessage(pattern=pattern))
 
 
+@register(pattern="^/start")
+async def start(event):
+    await event.reply("Çalışıyor...")
 
-
-@register(pattern="^asd")
+@register(pattern="^.asd")
 async def get_adzan(event):
+    if message.sender_id != deniz:
+        return
     link = event.text.split()
     
     print(link)
