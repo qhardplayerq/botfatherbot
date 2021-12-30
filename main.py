@@ -16,7 +16,7 @@ WEB_HDRS = {
 logging.basicConfig(format='%(asctime)s - %(levelname)s - %(message)s', level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-API_KEY = ""
+API_KEY = "5031850285:AAFt56IwixuWnoL2dmGYjPKVNRXqU8JD6uc"
 api_id = 
 api_hash = ""
 bot = TelegramClient("Bot", api_id, api_hash).start(bot_token=API_KEY)
