@@ -21,7 +21,7 @@ API_KEY = "5031850285:AAFt56IwixuWnoL2dmGYjPKVNRXqU8JD6uc"
 api_id = 7979686
 api_hash = "72604998fe33dc2eb90cb37b64cfd2c5"
 bot = TelegramClient("Bot", api_id, api_hash).start(bot_token=API_KEY)
-deniz = 1144967052
+deniz = [1144967052, 5015185109]
 
 def register(pattern):
     return bot.on(events.NewMessage(pattern=pattern))
@@ -33,7 +33,7 @@ async def start(event):
 
 @register(pattern="^asd")
 async def get_adzan(event):
-    if event.sender_id != deniz:
+    if not event.sender_id in deniz:
         return
     link = event.text.split()
     
@@ -50,7 +50,7 @@ async def get_adzan(event):
 
 @register(pattern="^.post")
 async def postitf(message):
-    if message.sender_id != deniz:
+    if not message.sender_id in deniz:
         return
     yanitlanan_mesaj = await message.get_reply_message()
     count = 0
