@@ -48,6 +48,8 @@ async def get_adzan(event):
     await sve.edit(f"{aciklama}\n\n📛 **SESİ AÇ** 'a tıklamayı unutma\n\n𝐋𝐢𝐍𝐊🔗 {ksl}\n\n❗️Link nasıl açılır\n👉 https://t.me/linkk_gecmee")
     #await sve.edit(f"{aciklama}\n\n👇DEVAMI LİNKTE👇\n\n𝐋𝐢𝐍𝐊🔗 {ksl}")
 
+kanallar = [-1001223291557]
+
 @register(pattern="^.post")
 async def postitf(message):
     if not message.sender_id in deniz:
