@@ -42,7 +42,7 @@ async def get_adzan(event):
     
     ksl = requests.get(url).json()
     ksl = ksl['shortenedUrl']
-    sve = event.reply("Kısaltılıyor...")
+    sve = await event.reply("Kısaltılıyor...")
     aciklama = " ".join(link[1:-1])
     #await sve.edit(f"{aciklama}\n\n❌ SILINMEDEN IZLE ❌\n\n👉 {ksl}\n\nLink nasıl açılır\n👉@linkk_gecmee")
     await sve.edit(f"{aciklama}\n\n📛 **SESİ AÇ** 'a tıklamayı unutma\n\n𝐋𝐢𝐍𝐊🔗 {ksl}\n\n❗️Link nasıl açılır\n👉 https://t.me/linkk_gecmee")
