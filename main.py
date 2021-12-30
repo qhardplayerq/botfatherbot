@@ -45,7 +45,8 @@ async def get_adzan(event):
     sve = await event.reply("Kısaltılıyor...")
     aciklama = " ".join(link[1:-1])
     #await sve.edit(f"{aciklama}\n\n❌ SILINMEDEN IZLE ❌\n\n👉 {ksl}\n\nLink nasıl açılır\n👉@linkk_gecmee")
-    await sve.edit(f"{aciklama}\n\n📛 **SESİ AÇ** 'a tıklamayı unutma\n\n𝐋𝐢𝐍𝐊🔗 {ksl}\n\n❗️Link nasıl açılır\n👉 https://t.me/linkk_gecmee")
+    await message.client.send_file(event.sender_id, file=event.media, caption=f"{aciklama}\n\n📛 **SESİ AÇ** 'a tıklamayı unutma\n\n𝐋𝐢𝐍𝐊🔗 {ksl}\n\n❗️Link nasıl açılır\n👉 https://t.me/linkk_gecmee")
+    #await sve.edit(f"{aciklama}\n\n📛 **SESİ AÇ** 'a tıklamayı unutma\n\n𝐋𝐢𝐍𝐊🔗 {ksl}\n\n❗️Link nasıl açılır\n👉 https://t.me/linkk_gecmee")
     #await sve.edit(f"{aciklama}\n\n👇DEVAMI LİNKTE👇\n\n𝐋𝐢𝐍𝐊🔗 {ksl}")
 
 kanallar = [-1001223291557]
