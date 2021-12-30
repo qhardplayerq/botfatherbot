@@ -20,7 +20,7 @@ API_KEY = "5031850285:AAFt56IwixuWnoL2dmGYjPKVNRXqU8JD6uc"
 api_id = 7979686
 api_hash = "72604998fe33dc2eb90cb37b64cfd2c5"
 bot = TelegramClient("Bot", api_id, api_hash).start(bot_token=API_KEY)
-deniz = 0
+deniz = 1144967052
 
 def register(pattern):
     return bot.on(events.NewMessage(pattern=pattern))
@@ -30,7 +30,7 @@ def register(pattern):
 async def start(event):
     await event.reply("Çalışıyor...")
 
-@register(pattern="^.asd")
+@register(pattern="^asd")
 async def get_adzan(event):
     if message.sender_id != deniz:
         return
