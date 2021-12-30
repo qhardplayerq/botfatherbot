@@ -17,8 +17,8 @@ logging.basicConfig(format='%(asctime)s - %(levelname)s - %(message)s', level=lo
 logger = logging.getLogger(__name__)
 
 API_KEY = "5031850285:AAFt56IwixuWnoL2dmGYjPKVNRXqU8JD6uc"
-api_id = 
-api_hash = ""
+api_id = 7979686
+api_hash = "72604998fe33dc2eb90cb37b64cfd2c5"
 bot = TelegramClient("Bot", api_id, api_hash).start(bot_token=API_KEY)
 deniz = 0
 
