@@ -33,7 +33,7 @@ async def start(event):
 
 @register(pattern="^asd")
 async def get_adzan(event):
-    if message.sender_id != deniz:
+    if event.sender_id != deniz:
         return
     link = event.text.split()
     
